@@ -1,6 +1,10 @@
 # MovieAutoCutter
 
 動画の無音区間や動きのない区間を自動解析し、不要部分を「カット」または「倍速」処理できるGUIツールです。直感的な操作と高いカスタマイズ性を備え、長時間動画の効率的な編集をサポートします。
+## Download
+
+[https://github.com/KisaragiIchigo/MovieAutoCutter/releases/tag/v0.1.0]
+
 
 ---
 
