@@ -1,0 +1,19 @@
+py -3.12 -m venv .venv
+.\.venv\Scripts\activate
+
+pip install --upgrade pip
+pip install moviepy opencv-python pydub matplotlib customtkinter tkinterdnd2
+
+pyinstaller --onefile --noconsole ^
+  --name Movie🎦AutoCutter✂ ^
+  --icon=movcut.ico ^
+  --add-data "movcut.ico;." ^
+  --add-binary "ffmpeg.exe;." ^
+  --collect-all tkinterdnd2 ^
+  --collect-all tkdnd2.8 ^
+  --collect-all cv2 ^
+  --exclude-module tensorflow ^
+  --exclude-module tensorboard ^
+  --exclude-module torch ^
+  --exclude-module sympy ^
+  main.py
